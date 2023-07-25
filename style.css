@@ -1,0 +1,75 @@
+*{
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+body, html{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    }
+.section-top{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+    background: url(image/01.jpg);
+    object-fit: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out ;
+}
+.content{
+    position: absolute;
+    top: 35%;
+    left: 34%;
+    text-align: center;
+    text-transform: uppercase;
+    padding:2%;
+}
+.content h1{
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: aliceblue;
+    margin-left:2%;
+    
+ }
+ span{
+    font-size: 50px;
+    letter-spacing: 10px;
+    color: blue;
+ }
+ .content a{
+   text-decoration: none;
+   font-size: 25px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: aliceblue;
+   background-color: rgb(35, 35, 181);
+   width: 160px;
+   height: 60px;
+   text-align: center;
+   margin-left: 33%;
+   border-radius: 20px;
+ }
+ .content a:hover{
+    background-color: black;
+    color: azure;
+ }
+ @keyframes change{
+    0%{
+       background-image: url(image/01.jpg);
+    }
+    25%{
+       background-image: url(image/02.jpg);
+    }
+    70%{
+       background-image: url(image/03.jpg);
+    }
+    100%{
+       background-image: url(image/04.jpg);
+    }
+  
+ }
